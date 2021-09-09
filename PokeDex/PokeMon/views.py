@@ -29,3 +29,15 @@ def addPokemon(request):
         'form': form,
     }
     return render(request, 'PokeMon/add_pokemon.html', context)
+
+
+def detailsPokemon(request, pk):
+    pokemon = Pokemon.objects.get(id=pk)
+    context={'pokemon':pokemon}
+    return render(request, 'PokeMon/showDetails.html', context)
+
+
+def deletePokemon(request, pk):
+    pokemon = Pokemon.objects.get(id=pk)
+    pokemon.delete()
+    return redirect('PokemonList')
