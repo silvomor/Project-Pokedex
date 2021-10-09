@@ -6,7 +6,6 @@
 - Delete from user side
 - Get full view of a specific Pokemon
 ---
-![gif_saving new pokemons](assets/PokeDex-01.png)
 ![gif1](https://raw.githubusercontent.com/silvomor/Project-Pokedex/main/assets/pokedex-gif-02.gif)
 ---
 - ## Planning Todo
